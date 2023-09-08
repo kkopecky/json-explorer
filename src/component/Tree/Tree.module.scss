@@ -1,0 +1,50 @@
+.tree {
+	-moz-appearance: textfield-multiline;
+	-webkit-appearance: textarea;
+	border: 1px solid gray;
+	height: auto;
+	overflow: auto;
+	padding: 2px;
+	resize: both;
+	width: 100%;
+	border-radius: 10px;
+	list-style-type: none;
+
+	> ul,
+	li {
+		list-style-type: none;
+	}
+
+	ul::before {
+		content: '{';
+	}
+
+	ul::after {
+		content: '}';
+	}
+
+	li {
+		padding-left: 5px;
+	}
+
+	a {
+		color: blue;
+		text-decoration: none;
+	}
+
+	ul.isArray::before {
+		content: '[';
+	}
+
+	ul.isArray::after {
+		content: ']';
+	}
+
+	ul.isObject::before {
+		content: '{';
+	}
+
+	ul.isObject::after {
+		content: '}';
+	}
+}

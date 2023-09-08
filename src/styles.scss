@@ -1,0 +1,12 @@
+@import '~bootstrap/scss/bootstrap';
+
+div[class^='col-'] {
+	margin: 0.5rem 0;
+}
+
+button {
+	color: black !important;
+	text-decoration: none !important;
+	font-size: 1rem !important;
+	font-weight: bold !important;
+}
